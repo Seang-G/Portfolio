@@ -1,3 +1,5 @@
+import Intro from "./pages/Intro"
+import "./styles/dist/app.css"
 
 function App() {
   return (
@@ -5,6 +7,7 @@ function App() {
       <header className="App-header">
         
       </header>
+      <Intro />
     </div>
   );
 }

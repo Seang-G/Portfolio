@@ -1,0 +1,18 @@
+#star {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  color: white;
+  animation-name: twinkl;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes twinkl {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
