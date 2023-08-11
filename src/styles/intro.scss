@@ -4,14 +4,10 @@
   width: 100vw;
   height: 100vh;
   // border-radius: 0px 0px 125px 125px;
-  background: linear-gradient(180deg, #0e0830 0%, #2e3b6a 100%);
+  
 }
 
 #star-container {
   width: 100%;
   height: $star-container-height;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none
 }
