@@ -1,8 +1,15 @@
-#cursor {
+#cursor1 {
   position: absolute;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  border: 30px solid rgba($color: #dfff2c, $alpha: 0.03);
+  border-radius: 50%;;
   background-color: rgba($color: #ffffff, $alpha: 0.1);
+}
+
+#cursor2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;;
+  background-color: rgba($color: #eef43e, $alpha: 0.1);
 }

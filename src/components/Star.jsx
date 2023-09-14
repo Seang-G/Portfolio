@@ -8,22 +8,16 @@ const Star = ({starConRef}) => {
   const [rotate, setRotate] = useState(0);
   const [delay, setDelay] = useState(Math.random() * 5);
   
-
-  const updateStar = () => {
-    setPosX(Math.random() * (starConRef.current.clientWidth-30))
-    setPosY(Math.random() * starConRef.current.clientHeight)
+  const update = (e) => {
+    setPosX(Math.random() * 3000)
+    setPosY(Math.random() * 280)
     setSize(Math.random() * 30)
     setRotate(Math.random() * 360)
-
-    setTimeout(updateStar, 5000)
   }
 
+
   useEffect(()=>{
-    setPosX(Math.random() * (starConRef.current.clientWidth-30))
-    setPosY(Math.random() * starConRef.current.clientHeight)
-    setSize(Math.random() * 30)
-    setRotate(Math.random() * 360)
-    setTimeout(updateStar, 5000+delay*1000)
+    update();
   }, [])
 
 
