@@ -35,7 +35,7 @@ const Intro = () => {
   }
 
   useEffect(()=>{
-    getProjects()
+    // getProjects()
   }, [])
 
   useEffect(()=>{
@@ -48,11 +48,11 @@ const Intro = () => {
 
   return (
     <div id="intro" onWheel={changePage} ref={currentDOM}>
-      <form onSubmit={postProject} style={{position:"absolute", zIndex:3}}>
-        <textarea name="title" id="title" cols="30" rows="10"></textarea>
+      {/* <form onSubmit={postProject} style={{position:"absolute", zIndex:3}}> */}
+        {/* <textarea name="title" id="title" cols="30" rows="10"></textarea>
         <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        <button>입력</button>
-      </form>
+        <button>입력</button> */}
+      {/* </form> */}
       {screens.map((screen, idx)=>{
         return (
           <AnimatePresence key={idx}>

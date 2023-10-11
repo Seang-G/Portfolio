@@ -17,16 +17,15 @@ export default function Projects({projects}) {
       <div id="projects-grid">
         {projects.map((project, idx)=>{
           return(
-            <div>
+            <div key={idx}>
               <motion.h4 
-                key={idx}
                 initial={{opaciy: 0}}
                 whileHover={{
                   opacity:1,
                   textShadow: "0px 0px 10px rgb(11, 139, 230)"
                 }}
               >{project.title}</motion.h4>
-              <h7>{project.description}</h7>
+              <h6>{project.description}</h6>
             </div>
           )
         })}
